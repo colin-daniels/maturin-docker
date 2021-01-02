@@ -7,5 +7,5 @@ docker build \
     --build-arg RUST_VERSION=1.48.0 \
     -t maturin .
 cd ~/your/code/directory
-docker run --rm -v "$PWD:/app" maturin build --manylinux 2010
+docker run --rm -v "$PWD:/io" maturin build --manylinux 2010
 ```
